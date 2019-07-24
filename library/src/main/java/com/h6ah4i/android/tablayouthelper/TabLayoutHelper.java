@@ -34,7 +34,7 @@ import java.lang.reflect.Method;
 
 public class TabLayoutHelper {
     protected TabLayout mTabLayout;
-    protected ViewPager mViewPager;
+    protected NoPreloadViewPager mViewPager;
 
     protected TabLayout.OnTabSelectedListener mInternalOnTabSelectedListener;
     protected FixedTabLayoutOnPageChangeListener mInternalTabLayoutOnPageChangeListener;
@@ -52,7 +52,7 @@ public class TabLayoutHelper {
      * @param tabLayout TabLayout instance
      * @param viewPager ViewPager instance
      */
-    public TabLayoutHelper(@NonNull TabLayout tabLayout, @NonNull ViewPager viewPager) {
+    public TabLayoutHelper(@NonNull TabLayout tabLayout, @NonNull NoPreloadViewPager viewPager) {
         PagerAdapter adapter = viewPager.getAdapter();
 
         if (adapter == null) {
@@ -311,7 +311,7 @@ public class TabLayoutHelper {
         return onCreateTab(tabLayout, adapter, position);
     }
 
-    protected void setupWithViewPager(@NonNull TabLayout tabLayout, @NonNull ViewPager viewPager) {
+    protected void setupWithViewPager(@NonNull TabLayout tabLayout, @NonNull NoPreloadViewPager viewPager) {
         final PagerAdapter adapter = viewPager.getAdapter();
         if (adapter == null) {
             throw new IllegalArgumentException("ViewPager does not have a PagerAdapter set");

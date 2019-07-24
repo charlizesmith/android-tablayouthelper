@@ -451,6 +451,7 @@ public class TabLayoutHelper {
 
         @Override
         public void onPageScrollStateChanged(int state) {
+            Log.d("custom_log","onPageScrollStateChanged");
             mPreviousScrollState = mScrollState;
             mScrollState = state;
         }

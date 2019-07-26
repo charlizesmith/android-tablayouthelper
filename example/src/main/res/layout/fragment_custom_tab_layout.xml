@@ -50,10 +50,18 @@
         app:tabPaddingEnd="0dp"
         app:tabPaddingStart="0dp"/>
 
-    <androidx.viewpager.widget.ViewPager
+<!--     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tab_layout"/>
+        android:layout_below="@+id/tab_layout"/> -->
+       
+        <com.example.shareblast.commonclasses.NoPreloadViewPager
+        android:id="@+id/hometab_subcatviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
 
 </RelativeLayout>

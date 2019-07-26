@@ -23,6 +23,7 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.core.view.ViewCompat;
 import androidx.viewpager.widget.ViewPager;
+import  com.h6ah4i.android.tablayouthelper.NoPreoadViewPager;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
